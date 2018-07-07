@@ -10,7 +10,7 @@ npm install --save vue-subscribe
 import vueSubscribe from 'vue-subscribe'
 Vue.use(vueSubscribe)
 ```
-#####在组件里使用
+##### 在组件里使用
 
 ```
 <template>
