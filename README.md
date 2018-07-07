@@ -1,4 +1,4 @@
-# vue-pay-keyboard
+# vue-Subscribe
 
 > A Vue.js project
 
