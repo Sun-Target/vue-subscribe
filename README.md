@@ -1,13 +1,14 @@
 # vue-Subscribe
 
-#npm 安装
+# npm 安装
 npm install --save vue-subscribe
 
-#main.js 引入
+# main.js 引入
 import vueSubscribe from 'vue-subscribe'
 Vue.use(vueSubscribe)
 
-//组件里面使用，例如
+# 组件里面使用，例如
+```
 <template>
   <vue-subscribe :setting="setting" :selectTime.sync="selectTime" ></vue-subscribe>
 </template>
@@ -41,3 +42,5 @@ export default {
   }
 }
 </script>
+```
+
