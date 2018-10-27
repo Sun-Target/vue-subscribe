@@ -216,10 +216,17 @@ export default {
       // console.dir(this.dateList);
     },
     defaultTime: function () {
-      if(this.setting.defaultTime){
-        console.dir(this.selectTime);
+      if(this.setting.defaultTime && this.timeList.length > 0){
         this.selectTime = this.timeList[0];
         this.$emit("update:selectTime", this.selectTime);
+      }else{
+        this.$emit("update:selectTime", {
+          is_active:'',//不用管
+          date:'',//18:00 时分
+          picker:'',//2018-16-17 12:00 日期
+          timestamp:'',//156224456时间戳
+          defaultTime:false
+        });
       }
     }  
   },
